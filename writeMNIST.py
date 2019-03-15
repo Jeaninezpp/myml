@@ -45,3 +45,49 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 print('MNIST手写图片准确率：')
 print(accuracy.eval({x: mnist.test.images, y_: mnist.test.labels}))
+
+
+
+
+
+
+
+---------------------------------------------------------result-----------------------------------------------------------------------
+/home/zpp/anaconda3/envs/tensorflow/bin/python /home/zpp/PycharmProjects/testformnist/writeMNIST.py
+WARNING:tensorflow:From /home/zpp/PycharmProjects/testformnist/writeMNIST.py:13: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+Extracting /home/zpp/download/file/MNIST_data/train-images-idx3-ubyte.gz
+WARNING:tensorflow:From /home/zpp/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From /home/zpp/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+Extracting /home/zpp/download/file/MNIST_data/train-labels-idx1-ubyte.gz
+WARNING:tensorflow:From /home/zpp/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /home/zpp/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.one_hot on tensors.
+WARNING:tensorflow:From /home/zpp/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:252: _internal_retry.<locals>.wrap.<locals>.wrapped_fn (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use urllib or similar directly.
+Successfully downloaded t10k-images-idx3-ubyte.gz 1648877 bytes.
+Extracting /home/zpp/download/file/MNIST_data/t10k-images-idx3-ubyte.gz
+Successfully downloaded t10k-labels-idx1-ubyte.gz 4542 bytes.
+Extracting /home/zpp/download/file/MNIST_data/t10k-labels-idx1-ubyte.gz
+WARNING:tensorflow:From /home/zpp/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+训练集信息：
+(55000, 784) (55000, 10)
+测试集信息：
+(10000, 784) (10000, 10)
+验证集信息：
+(5000, 784) (5000, 10)
+MNIST手写图片准确率：
+0.9198
+
+Process finished with exit code 0
