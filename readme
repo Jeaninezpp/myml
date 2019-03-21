@@ -1,1 +1,2 @@
 test on ubuntu
+mnist_softmax_regression.py is a simple example using softmax regression in mnist with accuracy 91.41%
