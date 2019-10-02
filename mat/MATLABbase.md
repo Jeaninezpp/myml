@@ -48,17 +48,17 @@
 
 - **矩阵和数组运算**
 
-  ![1569827242206](/home/zpp/Desktop/note/MATLAB note/image/1569827242206.png)
+  ![](/home/zpp/Documents/project/myml/mat/image/1569827242206.png)
 
   - 注意：
     - 左除\：a\b=inv(a)*b
     - 右除/：a/b=a*inv(b)
 
-![](/home/zpp/Desktop/note/MATLAB note/image/basefun.png)
+![](/home/zpp/Documents/project/myml/mat/image/basefun.png)
 
-![](/home/zpp/Desktop/note/MATLAB note/image/Selection_012.png)
+![](/home/zpp/Documents/project/myml/mat/image/Selection_012.png)
 
-![Selection_011](/home/zpp/Desktop/note/MATLAB note/image/Selection_011.png)
+![Selection_011](/home/zpp/Documents/project/myml/mat/image/Selection_011.png)
 
 - 解线性方程组
 - 矩阵分解
@@ -102,7 +102,7 @@
   - plot(x,y)
   - plot(x,y1,x,y2,x,y3,x,y4,....)
   - plot(x,y1,'k:',x,y2,'b-')
-  - ![](/home/zpp/Desktop/note/MATLAB note/image/Selection_009.png)
+  - ![](/home/zpp/Documents/project/myml/mat/image/Selection_009.png)
   - 图形标记(help gtext查询)
     - title(' ')
     - xlabel(' ')
@@ -110,8 +110,62 @@
   - 设定坐标范围：axis([xmin,xmax,ymin,ymax])
   - 图例：legend('sin(x)','cos(x)')
 - subplot(m,n,p)
-  - <img src="/home/zpp/Desktop/note/MATLAB note/image/Selection_010.png" style="zoom:67%;" />
+  - <img src="/home/zpp/Documents/project/myml/mat/image/Selection_010.png" style="zoom:67%;" />
 
 ---
 
-page.50
+### 结构
+
+- 条件
+  - if cond1
+    - xxx
+  - elseif cond2
+    - xxx
+  - else
+    - xxx
+  - end
+
+- swith
+  - switch 表达式
+  - case value1
+    - xxx
+  - case value2
+    - xxx
+  - ．．．
+  - otherwise
+    - xxx
+  - end
+- for　（循环语句会降低执行的速度）
+  - for variable=初值：步长：终值
+    - 循环体
+  - end
+
+- while
+  - while cond
+    - xxx
+  - end
+
+### 文件
+
+- 命令文件
+- 函数文件
+  - 格式：
+    - function [输出形参列表]＝函数名(输入形参列表)
+      - 注释说明部分
+      - 函数体
+  - 例子
+    - 函数文件examp.m
+      - function fout=charray(a,b,c)
+      - if nargin==1
+        - fout=a;
+      - else if nargin==2
+        - fout=a+b;
+      - else if nargin==3
+        - fout=(a\*b\*c)/2
+      - end
+    - 命令文件mydemo.m
+      - x=[1:3];
+      - y=[1;2;3];
+      - example(x)
+      - example(x,y')
+      - example(x,y,3)
